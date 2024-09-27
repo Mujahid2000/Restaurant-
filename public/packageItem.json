@@ -1,0 +1,288 @@
+   [
+    
+
+    {
+        "name": "Egg sandwich",
+        "description": "A delightful breakfast with eggs, bread, and fruit.",
+        "price": 55,
+        "category": "breakfast",
+        "image": "https://www.seriouseats.com/thmb/OQt5Q6EmxcQ25nxiAjuuJ-y_zvg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/the-best-egg-salad-recipe-hero-01_1-c43c237378d84a75ab5dc3f9b0bd1344.JPG"
+    },
+    {
+        "name": "Gazpacho Garlic",
+        "description": "Chilled tomato, cucumber, garlic, and red pepper soup.",
+        "price": 55,
+        "category": "breakfast",
+        "image": "https://assets.bonappetit.com/photos/57aca0e0f1c801a1038bc671/4:3/w_2959,h_2219,c_limit/summer-gazpacho.jpg"
+    },
+    {
+        "name": "Pan Con Berenjina Frita",
+        "description": "Marinated seabass with sour sauce, dill & coriander on bread.",
+        "price": 40,
+        "category": "breakfast",
+        "image": "https://ik.imagekit.io/ykmmrc3nwl/cdbce3815739ae0d79bd5d5389244273_document.jpeg?tr=w-1200,h-undefined"
+    },
+    {
+        "name": "New Lubina Marinada",
+        "description": "Fried aubergine with almond on bread.",
+        "price": 45,
+        "category": "breakfast",
+        "image": "https://www.demetrafood.it/storage/media/recipes/recipe_images/000248.jpg"
+    },
+    {
+        "name": "Breakfast Burrito",
+        "description": "A burrito filled with scrambled eggs, cheese, and sausage.",
+        "price": 50,
+        "category": "breakfast",
+        "image": "https://www.allrecipes.com/thmb/W_DBTjUHW1W0uOYuM9bnMRINOS4=/0x512/filters:no_upscale():max_bytes(150000):strip_icc()/214583-SouthwestBreakfastBurritos-ddmfs-3x4-8401-156c7c8d657a4a5d9f3f393146fdafc3.jpg"
+    },
+    {
+        "name": "Pancakes",
+        "description": "Fluffy pancakes served with maple syrup and butter.",
+        "price": 35,
+        "category": "breakfast",
+        "image": "https://www.inspiredtaste.net/wp-content/uploads/2024/03/Easy-Fluffy-Pancakes-Recipe-Video.jpg"
+    },
+    {
+        "name": "Oatmeal Bowl",
+        "description": "A warm bowl of oatmeal topped with fruits and nuts.",
+        "price": 40,
+        "category": "breakfast",
+        "image": "https://media.istockphoto.com/id/1371790658/photo/bowl-of-oatmeal-isolated-on-white-background.jpg?s=612x612&w=0&k=20&c=gV1xS1ZUrqLD_Q52h3D_kSh9GvLkXYr2w8UELrz5ejw="
+    },
+    {
+        "name": "Smoothie Bowl",
+        "description": "A smoothie bowl topped with granola and fresh fruits.",
+        "price": 60,
+        "category": "breakfast",
+        "image": "https://media.self.com/photos/590b551d5d5a8e04b24b9392/4:3/w_2560%2Cc_limit/_GoodCleanFood_p178-edit.jpg"
+    },
+   
+    {
+        "name": "Coconut Chia Bowl",
+        "description": "Marinated seabass with sour sauce & coriander on bread.",
+        "price": 95,
+        "category": "lunch",
+        "image": "https://img.taste.com.au/vU-0sgHy/taste/2016/11/chia-and-coconut-pudding-98299-1.jpeg"
+    },
+    {
+        "name": "New Lubina Marinada",
+        "description": "Atlantic cod fillet, chips, salad, tartare, lemon.",
+        "price": 120,
+        "category": "lunch",
+        "image": "https://www.umamiinfo.com/recipes2/.assets/thumbnail/155311240_1157849517968661_7359603541350139825_n-i.jpeg"
+    },
+    {
+        "name": "Gazpacho Garlic",
+        "description": "Chilled tomato, cucumber, garlic, and red pepper soup.",
+        "price": 29,
+        "category": "lunch",
+        "image": "https://assets.bonappetit.com/photos/57aca0e0f1c801a1038bc671/4:3/w_2959,h_2219,c_limit/summer-gazpacho.jpg"
+    },
+    {
+        "name": "Salmon Sushi",
+        "description": "Fresh salmon sushi with wasabi and soy sauce.",
+        "price": 85,
+        "category": "lunch",
+        "image": "https://cdn3.didevelop.com/public/cdn/533_930d040e29e39d9859ee99b33429bb96.jpg"
+    },
+    {
+        "name": "Vegan Wrap",
+        "description": "Healthy vegan wrap with quinoa and vegetables.",
+        "price": 75,
+        "category": "lunch",
+        "image": "https://www.connoisseurusveg.com/wp-content/uploads/2021/08/vegan-wraps-sq-1-of-1.jpg"
+    },
+    {
+        "name": "Beef Burger",
+        "description": "Juicy beef burger with lettuce, tomato, and cheese.",
+        "price": 105,
+        "category": "lunch",
+        "image": "https://img.delicious.com.au/9mwaUVSJ/w1200/del/2019/04/basic-beef-burger-104842-2.jpg"
+    },
+    {
+        "name": "Chicken Salad",
+        "description": "Grilled chicken salad with a variety of greens.",
+        "price": 65,
+        "category": "lunch",
+        "image": "https://assets.epicurious.com/photos/64a845e67799ee8651e4fb8f/4:3/w_5322,h_3991,c_limit/AshaGrilledChickenSalad_RECIPE_070523_56498.jpg"
+    },
+    {
+        "name": "Pasta Carbonara",
+        "description": "Classic Italian pasta with a creamy sauce.",
+        "price": 90,
+        "category": "lunch",
+        "image": "https://static01.nyt.com/images/2021/02/14/dining/carbonara-horizontal/carbonara-horizontal-articleLarge-v2.jpg"
+    },
+    
+    {
+        "name": "Steak Dinner",
+        "description": "Grilled steak with mashed potatoes and green beans.",
+        "price": 150,
+        "category": "dinner",
+        "image": "https://www.eatingwell.com/thmb/Gfxn7i39uCBfWwRL4OSIVTERzWM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/5488100-ea9d7533df104140a4279fc9d1185bd9.jpg"
+    },
+    {
+        "name": "Seafood Platter",
+        "description": "A selection of fresh seafood including shrimp, scallops, and fish.",
+        "price": 200,
+        "category": "dinner",
+        "image": "https://myfoodbook.com.au/sites/default/files/styles/schema_img/public/recipe_photo/Easy_As_Aussie_Seafood_Platter_vert%20copy.jpg"
+    },
+    {
+        "name": "Roast Chicken",
+        "description": "Oven-roasted chicken with roasted vegetables.",
+        "price": 140,
+        "category": "dinner",
+        "image": "https://www.inspiredtaste.net/wp-content/uploads/2017/10/Roasted-Chicken-with-Lemon-Recipe-1200.jpg"
+    },
+    {
+        "name": "Vegetable Stir-Fry",
+        "description": "A medley of stir-fried vegetables served over rice.",
+        "price": 110,
+        "category": "dinner",
+        "image": "https://www.wholesomeyum.com/wp-content/uploads/2020/11/wholesomeyum-Stir-Fry-Vegetables-15.jpg"
+    },
+    {
+        "name": "Grilled Salmon",
+        "description": "Grilled salmon with lemon butter sauce and asparagus.",
+        "price": 180,
+        "category": "dinner",
+        "image": "https://res.cloudinary.com/hksqkdlah/image/upload/41765-sfs-grilled-salmon-10664.jpg"
+    },
+    {
+        "name": "Lamb Chops",
+        "description": "Juicy lamb chops with rosemary and garlic.",
+        "price": 210,
+        "category": "dinner",
+        "image": "https://www.allrecipes.com/thmb/7HxjNoBySy-r-qG6r7MFOAuQCr4=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/74037-lamb-chops-with-balsamic-reduction-DDMFS-step-4x3-158-cc81d0fe528c4b07be2d7031e152f70b.jpg"
+    },
+    {
+        "name": "Mushroom Risotto",
+        "description": "Creamy mushroom risotto with Parmesan cheese.",
+        "price": 130,
+        "category": "dinner",
+        "image": "https://veganhuggs.com/wp-content/uploads/2018/04/instant-pot-mushroom-risotto-in-bowl-1.jpeg"
+    },
+    {
+        "name": "Spaghetti Bolognese",
+        "description": "Traditional Italian spaghetti with Bolognese sauce.",
+        "price": 140,
+        "category": "dinner",
+        "image": "https://www.kitchensanctuary.com/wp-content/uploads/2019/09/Spaghetti-Bolognese-square-FS-0204.jpg"
+    },
+    
+    {
+        "name": "Bruschetta",
+        "description": "Toasted bread topped with fresh tomatoes and basil.",
+        "price": 30,
+        "category": "starters",
+        "image": "https://thehealthfulideas.com/wp-content/uploads/2021/08/Bruschetta-with-Mozzarella-SQUARE3.jpg"
+    },
+    {
+        "name": "Caesar Salad",
+        "description": "Classic Caesar salad with croutons and Parmesan cheese.",
+        "price": 35,
+        "category": "starters",
+        "image": "https://assets.bonappetit.com/photos/624215f8a76f02a99b29518f/1:1/w_2800,h_2800,c_limit/0328-ceasar-salad-lede.jpg"
+    },
+    {
+        "name": "Mozzarella Sticks",
+        "description": "Fried mozzarella sticks with marinara sauce.",
+        "category": "starters",
+        "price": 40,
+        "image": "https://www.grandecheese.com/wp-content/uploads/2021/01/Mozzarella-Sticks.jpg"
+    },
+    {
+        "name": "Stuffed Mushrooms",
+        "description": "Mushrooms stuffed with garlic and cheese.",
+        "price": 45,
+        "category": "starters",
+        "image": "https://www.allrecipes.com/thmb/scMPYY9OArLAqzZTvSGOk0RRbbg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/12751-Crab-Stuffed-Mushrooms-ddmfs-4x3-027-3574446edf1c4fd5a2f3f05791617347.jpg"
+    },
+    {
+        "name": "Garlic Bread",
+        "description": "Crispy garlic bread with butter.",
+        "price": 25,
+        "category": "starters",
+        "image": "https://fullofplants.com/wp-content/uploads/2023/05/crispy-air-fryer-garlic-bread-delicious-quick-appetizer-vegan-thumb.jpg"
+    },
+    {
+        "name": "Soup of the Day",
+        "description": "Chef's special soup made fresh daily.",
+        "price": 50,
+        "category": "starters",
+        "image": "https://www.cocolabakery.com/mm5/graphics/00000001/soup.jpg"
+    },
+    {
+        "name": "Chicken Wings",
+        "description": "Spicy chicken wings with a side of blue cheese dip.",
+        "price": 55,
+        "category": "starters",
+        "image": "https://www.allrecipes.com/thmb/AtViolcfVtInHgq_mRtv4tPZASQ=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/ALR-187822-baked-chicken-wings-4x3-5c7b4624c8554f3da5aabb7d3a91a209.jpg"
+    },
+    {
+        "name": "Spring Rolls",
+        "description": "Crispy spring rolls with a sweet chili dip.",
+        "price": 35,
+        "category": "starters",
+        "image": "https://www.thespruceeats.com/thmb/LAD6HCmf0MFSpV3JDJgM9n7REos=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-thai-fresh-rolls-with-vegetarian-option-3217706-hero-A-3bdb04a8ee2444a2ab6873810a334642.jpg"
+    },
+    {
+        "name": "Cappuccino",
+        "description": "Rich and creamy cappuccino with steamed milk.",
+        "price": 20,
+        "category": "beverages",
+        "image": "https://cafefabrique.com/cdn/shop/articles/Cappuccino.jpg"
+    },
+    {
+        "name": "Fresh Orange Juice",
+        "description": "Freshly squeezed orange juice.",
+        "price": 15,
+        "category": "beverages",
+        "image": "https://www.evolutionfresh.com/wp-content/uploads/2022/08/EVL-ProductPage_OrganicPureOrange-KeyVisual.jpg"
+    },
+    {
+        "name": "Mineral Water",
+        "description": "Bottled mineral water.",
+        "price": 10,
+        "category": "beverages",
+        "image": "https://shodagor.com/public/uploads/all/0G0Ro.jpg"
+    },
+    {
+        "name": "Iced Tea",
+        "description": "Refreshing iced tea with a hint of lemon.",
+        "price": 18,
+        "category": "beverages",
+        "image": "https://www.errenskitchen.com/wp-content/uploads/2014/08/lemon-Iced-Tea.jpg"
+    },
+    {
+        "name": "Latte",
+        "description": "Creamy latte with a shot of espresso.",
+        "price": 25,
+        "category": "beverages",
+        "image": "https://coffeeaffection.com/wp-content/uploads/2020/01/how-to-make-a-latte-at-home.jpg"
+    },
+    {
+        "name": "Green Smoothie",
+        "description": "A healthy green smoothie with spinach and banana.",
+        "price": 30,
+        "category": "beverages",
+        "image": "https://www.healthyseasonalrecipes.com/wp-content/uploads/2020/06/healthy-green-smoothie-SQ-009.jpg"
+    },
+    {
+        "name": "Strawberry Milkshake",
+        "description": "Creamy milkshake made with fresh strawberries.",
+        "price": 28,
+        "category": "beverages",
+        "image": "https://www.simplotfoods.com/_next/image?url=https%3A%2F%2Fimages.ctfassets.net%2F0dkgxhks0leg%2F6eCUvdPuiee3crP01qJHSB%2Fbfa91f662ef32d0f48700b61c95354e7%2FStrawberry_20milkshake.jpg%3Ffm%3Dwebp&w=3840&q=75"
+    },
+    {
+        "name": "Sparkling Water",
+        "description": "Refreshing sparkling water with a hint of lime.",
+        "price": 12,
+        "category": "beverages",
+        "image": "https://felenevodka.com/wp-content/uploads/Carbonated-Water.jpg"
+    }
+    
+   ]

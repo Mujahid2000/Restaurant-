@@ -1,0 +1,81 @@
+import { createRouter, createWebHistory } from 'vue-router'
+import Home from '../views/Home.vue'
+import About from '@/views/About.vue'
+import Items from '@/views/Items.vue'
+import Pages from '@/views/Pages.vue'
+import Contact from '@/views/Contact.vue'
+import FoodDetails from '@/views/FoodDetails.vue'
+import MyAccount from '@/views/MyAccount.vue'
+import AuthenticationPage from '@/views/AuthenticationPage.vue'
+import MyCart from '@/views/MyCart.vue'
+import MyWishList from '@/views/MyWishList.vue'
+import Menu from '@/views/Menu.vue'
+import MenuDetails from '@/components/MenuDetails/MenuDetails.vue'
+
+const router = createRouter({
+  history: createWebHistory(import.meta.env.BASE_URL),
+  routes: [
+    {
+      path: '/',
+      name: 'home',
+      component: Home
+    },
+    {
+      path: '/about',
+      name: 'about',
+      component: About
+    },
+    {
+      path: '/items',
+      name: 'items',
+      component: Items
+    },
+    {
+      path: '/pages',
+      name: 'pages',
+      component: Pages
+    },
+    {
+      path: '/contact',
+      name: 'contact',
+      component: Contact
+    },
+    {
+      path: '/foodDetails/:id',
+      name: 'FoodDetails',
+      component: FoodDetails
+    },
+    {
+      path: '/myAccount',
+      name: 'Registration',
+      component: MyAccount
+    },
+    {
+      path: '/login',
+      name: 'Authentication',
+      component: AuthenticationPage
+    },
+    {
+      path: '/cart',
+      name: 'MyCart',
+      component: MyCart
+    },
+    {
+      path: '/myWishList',
+      name: 'MyWishList',
+      component: MyWishList
+    },
+    {
+      path: '/allMenu',
+      name: 'Menu',
+      component: Menu
+    },
+    {
+      path:'/menuDetails/:id',
+      name: 'MenuDetails',
+      component: MenuDetails
+    }
+  ]
+})
+
+export default router

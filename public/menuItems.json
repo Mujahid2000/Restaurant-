@@ -1,0 +1,141 @@
+[
+  {
+    
+    
+    "name": "Chicken Supreme Pizza",
+    "description": "Indulge in our Chicken Supreme Pizza, a perfect blend of flavors and textures that will tantalize your taste buds. Topped with juicy grilled chicken pieces, fresh onions, vibrant bell peppers, and black olives, this pizza is not only delicious but also visually appealing. A hint of green chili adds just the right amount of spice, making it an ideal choice for those who love a bit of heat in their meals. Our pizza is baked to perfection with a crispy crust, gooey cheese, and a rich tomato base, ensuring every bite is a delightful experience.",
+    "price": 150,
+    "image": "https://i.ibb.co/p3Y0Hb9/image-items-List-1.png"
+  },
+  {
+    
+    
+    "name": "Hamburger Burger with Beef",
+    "description": "Savor the mouthwatering flavors of our Hamburger Burger with Beef. This classic burger features a juicy beef patty grilled to perfection, providing a savory taste that’s hard to resist. Layered with crisp lettuce, ripe tomato slices, and melted cheese, it’s a feast for the senses. Our special sauce adds a unique twist, enhancing the overall flavor profile of this hearty burger. Served in a freshly baked bun, it’s not just a meal; it’s an experience that will leave you wanting more. Perfect for any occasion, this burger is a crowd-pleaser that never disappoints.",
+    "price": 150,
+    "image": "https://i.ibb.co/NTFvkyh/image-items-List-2.png"
+  },
+  {
+    
+    
+    "name": "Belgium Waffles with Strawberries",
+    "description": "Treat yourself to our delectable Belgium Waffles with Strawberries, a perfect dessert or breakfast option. These fluffy waffles are made from a special batter that results in a light, airy texture. Topped with fresh, ripe strawberries and drizzled with pure maple syrup, they offer a delightful combination of sweetness and freshness. Each bite melts in your mouth, leaving you craving for more. This dish is not only delicious but also beautifully presented, making it ideal for sharing or enjoying solo. Pair it with whipped cream or ice cream for an extra indulgence.",
+    "price": 150,
+    "image": "https://i.ibb.co/jVVbsQH/image-items-List-3.png"
+  },
+  {
+    
+    
+    "name": "Chicken Skewers",
+    "description": "Experience the succulent flavors of our Chicken Skewers, a delightful dish perfect for any gathering or as a tasty snack. Each skewer is marinated in a blend of aromatic spices and herbs, then grilled to perfection to enhance the juicy flavor of the chicken. Served with a tangy dipping sauce, these skewers are not only delicious but also a healthier option for meat lovers. The presentation is appealing, making them an excellent choice for parties or casual dining. Enjoy them as an appetizer or a main course; they are sure to satisfy your cravings.",
+    "price": 150,
+    "image": "https://i.ibb.co/TPvfKBP/image-items-List-4.png"
+  },
+  {
+    
+    
+    "name": "Delicious Food on a White Plate",
+    "description": "Our Delicious Food on a White Plate is a visually stunning dish that combines various flavors and ingredients to create a memorable dining experience. Each component is carefully chosen to complement the others, offering a harmonious blend of tastes. The plate typically features a variety of seasonal vegetables, proteins, and garnishes that are not only nutritious but also aesthetically pleasing. Perfect for those who appreciate gourmet dining, this dish exemplifies culinary artistry. Whether you’re enjoying it at home or in a restaurant, it’s a delightful option that caters to both your palate and your eyes.",
+    "price": 150,
+    "image": "https://i.ibb.co/JncYdCz/image-items-List-5.png"
+  },
+  {
+    
+    "newId": 1,
+    "image": "https://i.ibb.co/WtBXDzM/image-items-List-ooffer.png"
+  },
+  {
+    
+    
+    "name": "Mutton or Lamb Biryani",
+    "description": "Delve into the rich and aromatic world of our Mutton or Lamb Biryani, a classic dish that is beloved by many. This biryani is prepared with fragrant basmati rice, marinated pieces of tender mutton or lamb, and a blend of spices that creates an irresistible flavor profile. Slow-cooked to perfection, the meat is succulent and infused with the aromas of saffron, cardamom, and other traditional spices. Each serving is garnished with fresh herbs and served with a side of raita to enhance the dining experience. It’s a hearty meal that promises to satisfy your cravings.",
+    "price": 150,
+    "image": "https://i.ibb.co/QQwdpf2/image-items-List-6-1.png"
+  },
+  {
+    
+    
+    "name": "Spicy Fried Tubtim Fish Salad",
+    "description": "Indulge in the vibrant flavors of our Spicy Fried Tubtim Fish Salad, a refreshing dish that combines textures and tastes. The tubtim fish is expertly fried to achieve a crispy exterior while maintaining its tenderness on the inside. Served over a bed of mixed greens, this salad includes fresh vegetables that add crunch and nutrition. The dressing is tangy and slightly spicy, complementing the flavors of the fish perfectly. This dish is perfect for those looking for a light yet satisfying meal that packs a flavorful punch and leaves you feeling energized.",
+    "price": 150,
+    "image": "https://i.ibb.co/Z8LjjDQ/image-items-List-7-1.png"
+  },
+  {
+    
+    
+    "name": "Fresh Cola Drink with Green Lime",
+    "description": "Cool off with our Fresh Cola Drink with Green Lime, the ultimate refreshment for hot days. This drink combines the classic taste of cola with the zesty brightness of fresh lime, creating a unique flavor that invigorates the palate. Served chilled, it’s a delightful accompaniment to any meal or a perfect standalone beverage. The addition of lime not only enhances the taste but also adds a beautiful presentation to the drink. Enjoy it at parties, barbecues, or simply as a treat for yourself; it’s a beverage that everyone will love.",
+    "price": 150,
+    "image": "https://i.ibb.co/zFjhxJJ/image-items-List-8.png"
+  },
+  {
+    
+    
+    "name": "Chocolate Ice Cream",
+    "description": "Indulge in the rich, creamy goodness of our Chocolate Ice Cream, a perfect dessert for chocolate lovers. Made from high-quality cocoa and fresh cream, this ice cream delivers an intense chocolate flavor that melts in your mouth. Each scoop is a delightful experience, smooth and velvety, making it hard to stop at just one. Enjoy it on its own, or add toppings like sprinkles, chocolate chips, or whipped cream for an extra treat. This ice cream is ideal for warm days, celebrations, or simply as a sweet ending to any meal.",
+    "price": 150,
+    "image": "https://i.ibb.co/0fDrsLC/image-items-List-10.png"
+  },
+  {
+    
+    "newId": 2,
+    "banner": "banner2",
+    "image": "https://i.ibb.co/MZTDfsZ/image-items-List-ooffer-2.png"
+  },
+  {
+    
+    
+    "name": "Chocolate Topping for Ice Cream Cups",
+    "description": "Elevate your dessert experience with our Chocolate Topping for Ice Cream Cups, the perfect way to add a rich, chocolatey finish to your sweet treats. This decadent topping is made from high-quality cocoa, ensuring a smooth and velvety texture that pairs wonderfully with ice cream. Drizzle it generously over your favorite flavors for an indulgent treat that satisfies your sweet cravings. It’s a fantastic addition to any dessert, whether enjoyed at home or at parties. Make your ice cream cups truly special and delight your guests with this delicious chocolate topping.",
+    "price": 150,
+    "image": "https://i.ibb.co/th506rb/image-items-List-11.png"
+  },
+  {
+    
+    
+    "name": "Healthy Breakfast",
+    "description": "Start your day on a nutritious note with our Healthy Breakfast, a balanced meal designed to fuel your body and mind. This breakfast platter typically includes a variety of options such as scrambled eggs, whole grain toast, fresh fruits, and yogurt, providing a perfect balance of protein, carbs, and healthy fats. Each component is chosen for its nutritional value and taste, ensuring you get a delicious meal that keeps you energized throughout the day. Ideal for those who appreciate healthy eating, this breakfast is both satisfying and nourishing, making it a great choice for anyone.",
+    "price": 150,
+    "image": "https://i.ibb.co/7CFgm6R/image-items-List-12.png"
+  },
+  {
+    
+    
+    "name": "Breakfast with Coffee and Fresh Croissants",
+    "description": "Enjoy a delightful morning with our Breakfast featuring Coffee and Fresh Croissants, a classic combination that never goes out of style. The flaky, buttery croissants are baked to perfection, offering a warm, melt-in-your-mouth experience. Paired with a steaming cup of aromatic coffee, this breakfast is a treat for all the senses. It’s perfect for leisurely mornings, providing a moment of indulgence before you start your day. Ideal for both casual breakfasts and special occasions, this meal is a simple yet elegant way to enjoy the pleasures of good food and great company.",
+    "price": 150,
+    "image": "https://i.ibb.co/CQzNRbr/image-items-List-13.png"
+  },
+  {
+    
+    
+    "name": "Fried Eggs, Sausages, Zucchini",
+    "description": "Dive into our hearty Breakfast featuring Fried Eggs, Sausages, and Zucchini, a satisfying meal to kickstart your day. The eggs are fried to your preference—sunny side up, over easy, or scrambled—while the sausages are perfectly cooked for a savory flavor. Fresh zucchini is sautéed to add a nutritious twist, providing a balance of flavors and textures. This dish is ideal for those who enjoy a fulfilling breakfast that keeps them energized throughout the morning. Whether enjoyed at home or in a café, it’s a classic choice that never disappoints.",
+    "price": 150,
+    "image": "https://i.ibb.co/ZgzBTnm/image-items-List-14.png"
+  },
+  {
+    
+    
+    "name": "Salad, Fried Eggs and Pastry",
+    "description": "Indulge in our delightful dish featuring Salad, Fried Eggs, and Pastry, a balanced meal that brings together a variety of flavors. The fresh salad includes a mix of seasonal greens, cherry tomatoes, and a light vinaigrette that perfectly complements the other elements. The fried eggs are cooked to a golden perfection, providing a delicious protein source. Accompanied by flaky pastry, this dish offers a satisfying crunch. Ideal for brunch or a light lunch, it’s a meal that caters to both health-conscious eaters and those looking for comfort food.",
+    "price": 150,
+    "image": "https://i.ibb.co/CB82X9H/image-items-List-15.png"
+  },
+  {
+    
+    
+    "name": "Breakfast with Coffee and Fresh Croissants",
+    "description": "Savor another round of our delightful Breakfast with Coffee and Fresh Croissants, a timeless classic that promises to start your day right. The fresh, flaky croissants are baked until golden brown, offering a buttery taste and a delicate texture. Paired with a steaming cup of freshly brewed coffee, this breakfast is designed to indulge your senses and provide a moment of relaxation. Perfect for sharing with friends or enjoying alone, it’s a simple yet sophisticated choice for any breakfast table. Treat yourself to this comforting meal and elevate your morning routine.",
+    "price": 150,
+    "image": "https://i.ibb.co/th506rb/image-items-List-11.png"
+  },
+  {
+    
+    
+    "name": "Breakfast with Coffee and Fresh Croissants",
+    "description": "Savor another round of our delightful Breakfast with Coffee and Fresh Croissants, a timeless classic that promises to start your day right. The fresh, flaky croissants are baked until golden brown, offering a buttery taste and a delicate texture. Paired with a steaming cup of freshly brewed coffee, this breakfast is designed to indulge your senses and provide a moment of relaxation. Perfect for sharing with friends or enjoying alone, it’s a simple yet sophisticated choice for any breakfast table. Treat yourself to this comforting meal and elevate your morning routine.",
+    "price": 150,
+    "image": "https://i.ibb.co/th506rb/image-items-List-11.png"
+  }
+]
