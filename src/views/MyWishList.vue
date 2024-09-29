@@ -25,7 +25,7 @@ const fetchCartData = async () => {
   }
   loading.value = true;
   try {
-    const response = await axios.get(`http://localhost:5000/wishList/${emailId.value}`);
+    const response = await axios.get(`https://restaurant-server-xi.vercel.app/wishList/${emailId.value}`);
     data.value = response.data; // Populate cart data
   } catch (error) {
     console.error(error);
@@ -81,7 +81,7 @@ console.log( itemId, name, image, price, quantity, Email, CustomerName);
 addingToCart.value = true;
 
 try {
-  await axios.post('http://localhost:5000/cart',{
+  await axios.post('https://restaurant-server-xi.vercel.app/cart',{
 itemId : item.itemId,
 name : item.name,
 image : item.image,
@@ -115,7 +115,7 @@ const handleDelete =async (itemId) =>{
     return toast.error('User not valid')
   }
 try {
-  const response = await axios.delete(`http://localhost:5000/wishListDataDelete/${itemId}`);
+  const response = await axios.delete(`https://restaurant-server-xi.vercel.app/wishListDataDelete/${itemId}`);
   toast.success('Item deleted Successfully')
   fetchCartData();
 } catch (error) {

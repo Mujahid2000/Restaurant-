@@ -17,7 +17,7 @@ const singleData = async(id) =>{
   try {
 
     loading.value= true;
-  const response = await axios.get(`http://localhost:5000/recipe/${id}`)
+  const response = await axios.get(`https://restaurant-server-xi.vercel.app/recipe/${id}`)
   currentItems.value = response.data;
   } catch (error) {
     console.log(error);

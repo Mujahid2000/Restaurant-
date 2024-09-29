@@ -9,7 +9,7 @@ const selectedMenu = ref('breakfast'); // Default selected menu
 // Function to fetch menu items based on the selected menu type
 const itemsMenu = async (item) => {
   try {
-    const response = await axios.get(`http://localhost:5000/dataMenu/${item}`);
+    const response = await axios.get(`https://restaurant-server-xi.vercel.app/dataMenu/${item}`);
     menuButton.value = response.data; // Update menu items
     selectedMenu.value = item; // Set selected menu
   } catch (error) {

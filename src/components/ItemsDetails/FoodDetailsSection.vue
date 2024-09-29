@@ -19,7 +19,7 @@ const addingToWishlist = ref(false);
 const singleData = async (id) => {
   try {
     loading.value = true;
-    const response = await axios.get(`http://localhost:5000/recipe/${id}`);
+    const response = await axios.get(`https://restaurant-server-xi.vercel.app/recipe/${id}`);
     currentItems.value = response.data;  // Update current item data
   } catch (error) {
     console.error(error);
@@ -39,7 +39,7 @@ watch(() => route.params.id, (newId) => {
 // Fetch all recipe data
 const allData = async () => {
   try {
-    const response = await axios.get('http://localhost:5000/recipe');
+    const response = await axios.get('https://restaurant-server-xi.vercel.app/recipe');
     allRecipeData.value = response.data;
     shuffledItems.value = shuffleArray([...response.data]);  // Shuffle items
   } catch (error) {
@@ -63,7 +63,7 @@ const addToCart = async (item) => {
   addingToCart.value = true;
 
   try {
-    await axios.post('http://localhost:5000/cart', {
+    await axios.post('https://restaurant-server-xi.vercel.app/cart', {
       itemId: item._id,  // Correct usage of currentItems.value._id
       name: item.name,
       price: item.price,
@@ -92,7 +92,7 @@ const wishList = async (item) => {
   addingToWishlist.value = true;
 
   try {
-    await axios.post('http://localhost:5000/wishList', {
+    await axios.post('https://restaurant-server-xi.vercel.app/wishList', {
       itemId: item._id,  // Correct usage of currentItems.value._id
       name: item.name,
       price: item.price,

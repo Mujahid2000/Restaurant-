@@ -9,7 +9,7 @@ const loading = ref(true)
 const dataGetFunction = async () => {
   try {
     loading.value=true
-    const menuData = await axios.get('http://localhost:5000/recipe');
+    const menuData = await axios.get('https://restaurant-server-xi.vercel.app/recipe');
     data.value = menuData.data;
   } catch (error) {
     console.error('Error fetching data:', error);

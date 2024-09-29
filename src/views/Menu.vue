@@ -10,7 +10,7 @@ const currentPath = route.path;
 console.log(currentPath);
 
 const dataFunction = async () => {
-  const newPackageData = await axios.get('http://localhost:5000/dataMenu');
+  const newPackageData = await axios.get('https://restaurant-server-xi.vercel.app/dataMenu');
   data.value = newPackageData.data;
 };
 

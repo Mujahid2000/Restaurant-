@@ -39,7 +39,7 @@ const fetchCartData = async () => {
   }
   loading.value = true;
   try {
-    const response = await axios.get(`http://localhost:5000/cart/${emailId.value}`);
+    const response = await axios.get(`https://restaurant-server-xi.vercel.app/cart/${emailId.value}`);
     data.value = response.data; // Populate cart data
   } catch (error) {
     console.error(error);
@@ -113,7 +113,7 @@ const applyCoupon = () =>{
 
 const handleDelete = async (itemId) => {
   try {
-    const response = await axios.delete(`http://localhost:5000/cartDataDelete/${itemId}`);
+    const response = await axios.delete(`https://restaurant-server-xi.vercel.app/cartDataDelete/${itemId}`);
     toast.success('Item removed successfully');
     fetchCartData();  // Refetch cart data to update the UI after deletion
   } catch (error) {
@@ -144,7 +144,7 @@ const orderData = {
 }
 
   try {
-  await axios.post('http://localhost:5000/proceed',orderData);
+  await axios.post('https://restaurant-server-xi.vercel.app/proceed',orderData);
   toast.success('Order placed successfully!');
  } catch (error) {
   console.error(error);
