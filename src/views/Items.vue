@@ -5,9 +5,12 @@ import ItemsImageSection from '@/components/Items/ItemsImageSection.vue';
 
 </script>
 
-<template>
-<ItemsImageSection/>
+<template >
+    <div class="px-3">
+        <ItemsImageSection/>
 <FoodItemsSection/>
+    </div>
+
 
 </template>
 

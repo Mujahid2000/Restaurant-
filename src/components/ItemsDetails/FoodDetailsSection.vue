@@ -1,18 +1,19 @@
 <script setup>
 import { useRoute } from 'vue-router';
-import { inject, onMounted, ref, watch } from 'vue';
+import { computed, inject, onMounted, ref, watch } from 'vue';
 import axios from 'axios';
 import { useToast } from 'vue-toastification';
 
 const currentItems = ref(null);  // Holds current item details
 const user = inject('user'); // Default to null if user is not provided
-const email = ref();
+const email = computed(() => user.value ? user.value.email : null); // Computed email based on user
 const loading = ref(true);
 const toast = useToast();
 const route = useRoute();
 const allRecipeData = ref([]);
 const shuffledItems = ref([]);
 const addingToCart = ref(false); 
+const addingToWishlist = ref(false); 
 
 // Fetch single data based on route ID
 const singleData = async (id) => {
@@ -66,6 +67,7 @@ const addToCart = async (item) => {
       itemId: item._id,  // Correct usage of currentItems.value._id
       name: item.name,
       price: item.price,
+      quantity: 1,
       image: item.image,
       Email: email.value,  // Use the reactive email value
       CustomerName: user.value.displayName  // Use the user's displayName
@@ -76,6 +78,35 @@ const addToCart = async (item) => {
     toast.error('Failed to add item to the cart. Please try again later.');
   } finally {
     addingToCart.value = false;
+  }
+};
+
+// wishList add system here 
+
+const wishList = async (item) => {
+  if (!user.value || !email.value) {  // Use user.value to access the reactive user
+    toast.error('Please log in to add items to your cart.');
+    return;
+  }
+
+  addingToWishlist.value = true;
+
+  try {
+    await axios.post('http://localhost:5000/wishList', {
+      itemId: item._id,  // Correct usage of currentItems.value._id
+      name: item.name,
+      price: item.price,
+      quantity: 1,
+      image: item.image,
+      Email: email.value,  // Use the reactive email value
+      CustomerName: user.value.displayName  // Use the user's displayName
+    });
+    toast.success('Item added to the wishlist successfully!');
+  } catch (error) {
+    console.error(error);
+    toast.error('Failed to add item to the cart. Please try again later.');
+  } finally {
+    addingToWishlist.value = false;
   }
 };
 
@@ -101,9 +132,9 @@ watch(user, (newUser) => {
 <template>
   <div class="max-w-7xl mx-auto">
     <!-- Data show in details section -->
-    <div class="flex gap-6 justify-between items-start py-6">
+    <div class="flex flex-col lg:flex-row gap-6 justify-between items-start py-6">
       <!-- Image div -->
-      <div class="w-2/3">
+      <div class="w-full lg:w-2/3">
         <!-- Loading State -->
         <div v-if="loading" class="loading-container">
           <!-- Skeleton Loader -->
@@ -127,8 +158,8 @@ watch(user, (newUser) => {
 
         <!-- Content Displayed after Loading -->
         <div v-else>
-          <div v-if="currentItems && currentItems.image">
-            <div class="py-3">
+          <div v-if="currentItems && currentItems.image" >
+            <div class="py-3  ">
               <img class="w-full h-[28rem] object-cover rounded-2xl shadow-lg" :src="currentItems.image" alt="Recipe Image">
             </div>
             <div class="flex gap-3 mt-3">
@@ -140,11 +171,11 @@ watch(user, (newUser) => {
       </div>
 
       <!-- Description and Button Section -->
-      <div class="w-1/3 flex flex-col justify-between items-start">
+      <div class="w-full lg:w-1/3 flex flex-col justify-between items-start">
         <div v-if="currentItems && currentItems.description" class="flex-1">
           <h1 class="text-3xl font-bold mb-4 text-gray-800">{{ currentItems.name }}</h1>
           <p class="descriptionText text-justify text-gray-600 mb-6">{{ currentItems.description }}</p>
-          <p class="text-2xl font-semibold text-gray-800 mb-6">Price: ${{ currentItems.price }}</p>
+          <p class="text-2xl font-semibold flex gap-4 text-gray-800 mb-6">Price: ${{ currentItems.price }} <button @click="wishList(currentItems)"><i class="fa-solid fa-heart" style="color: #ff0000;"></i></button></p>
           <button 
             :disabled="addingToCart" 
             @click="addToCart(currentItems)" 

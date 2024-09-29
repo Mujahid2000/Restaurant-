@@ -13,6 +13,10 @@ const route = useRoute();
 const allRecipeData = ref([]);
 const shuffledItems = ref([]);
 const addingToCart = ref(false); 
+const addingToWishlist = ref(false); 
+
+
+
 
 // Fetch single data based on route ID
 const singleData = async (id) => {
@@ -71,6 +75,7 @@ const addToCart = async () => {
       itemId: menuItems.value._id,  // Use menuItems.value._id
       name: menuItems.value.name,
       price: menuItems.value.price,
+      quantity: 1,
       image: menuItems.value.image,
       Email: email.value,  
       CustomerName: user.value.displayName  
@@ -83,6 +88,37 @@ const addToCart = async () => {
     addingToCart.value = false;
   }
 };
+
+// add wishlist functionality
+const wishList = async (item) => {
+  if (!user.value || !email.value) {  // Use user.value to access the reactive user
+    toast.error('Please log in to add items to your cart.');
+    return;
+  }
+
+  addingToWishlist.value = true;
+
+  try {
+    await axios.post('http://localhost:5000/wishList', {
+      itemId: item._id,  // Correct usage of currentItems.value._id
+      name: item.name,
+      price: item.price,
+      quantity: 1,
+      image: item.image,
+      Email: email.value,  // Use the reactive email value
+      CustomerName: user.value.displayName  // Use the user's displayName
+    });
+    toast.success('Item added to the wishlist successfully!');
+  } catch (error) {
+    console.error(error);
+    toast.error('Failed to add item to the cart. Please try again later.');
+  } finally {
+    addingToWishlist.value = false;
+  }
+};
+
+
+
 
 // Ensure data is fetched on component mount
 onMounted(() => {
@@ -133,7 +169,7 @@ onMounted(() => {
         <div v-if="menuItems && menuItems.description" class="flex-1">
           <h1 class="text-3xl font-bold mb-4 text-gray-800">{{ menuItems.name }}</h1>
           <p class="descriptionText text-justify text-gray-600 mb-6">{{ menuItems.description }}</p>
-          <p class="text-2xl font-semibold text-gray-800 mb-6">Price: ${{ menuItems.price }}</p>
+          <p class="text-2xl font-semibold text-gray-800 mb-6">Price: ${{ menuItems.price }} <button @click="wishList(menuItems)"><i class="fa-solid fa-heart" style="color: #ff0000;"></i></button></p>
           <button 
             :disabled="addingToCart" 
             @click="addToCart" 
@@ -163,7 +199,7 @@ onMounted(() => {
         <div v-if="item.name || item.description || item.price" class="flex-1 p-4">
           <h2 v-if="item.name" class="text-xl font-bold text-gray-800 hover:text-[#c33]">{{ item.name }}</h2>
           <p v-if="item.description" class="text-gray-600">{{ item.description.slice(0, 50) }}...</p>
-          <p v-if="item.price" class="text-lg font-semibold text-gray-800 mt-2">${{ item.price }}</p>
+          <p v-if="item.price" class="text-lg font-semibold text-gray-800 mt-2">${{ item.price }} </p>
         </div>
 
         <!-- Image Section for Regular Items -->

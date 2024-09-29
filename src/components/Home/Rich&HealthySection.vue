@@ -9,7 +9,7 @@
       
       <!-- Chef Image -->
     <div class="flex items-end">
-        <div class="flex justify-between gap-10">
+        <div class="flex flex-col md:flex-row items-center md:justify-between gap-10">
         <div class="w-full max-w-xs">
         <img class=" rounded-lg shadow-lg" 
            src="https://i.ibb.co/M2w8vM8/e1268c4d0ed68e5e22e94eac7953c2d5.png" 
@@ -41,7 +41,7 @@
         </ul>
 
         <!-- Read More Button -->
-        <div class="flex  mt-4">
+        <div class="flex justify-center md:justify-start mt-4">
             <button class="bg-gradient-to-r from-red-500 to-red-700 focus:outline-none font-bold items-center justify-center text-white w-[18.5rem] h-[3.5rem] text-[1.5rem] rounded-full shadow-lg transform transition-all duration-300 hover:from-red-600 hover:to-red-800 hover:scale-105 hover:shadow-2xl">
             Read More
             </button>
@@ -52,7 +52,7 @@
 
       <!-- Food Image -->
        <div>
-         <img class="w-full h-[20rem] max-w-xs absolute -mt-80 -ml-96 rounded-lg shadow-lg" 
+         <img class="w-full hidden md:block h-[20rem] max-w-xs absolute -mt-80 -ml-96 rounded-lg shadow-lg" 
            src="https://i.ibb.co/DtXmvHG/image-rich-Healthy-2.png" 
            alt="Food Picture">
        </div>

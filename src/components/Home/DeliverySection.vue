@@ -1,9 +1,13 @@
+<script>
+
+</script>
+
 <template>
     <div class=" py-10 px-4">
-      <div class="max-w-7xl mx-auto flex items-center justify-between gap-8">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         
         <!-- Left Side (Text and Delivery Information) -->
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <h6 class="deliveryText text-center text-md font-bold">Delivery</h6>
           <h1 class="text-3xl font-bold text-[#2A435D] leading-tight headingtitle">
             A Moments Of <br> <span class="text-[#C33] spanColor">Delivered On Right Time & Place</span>
@@ -13,7 +17,7 @@
           </p>
           
           <!-- Delivery Order Section -->
-          <div class="mt-8 flex items-center  gap-10">
+          <div class="mt-8 flex flex-col lg:flex-row items-center  gap-10">
             <div class="text-sm">
               <p class="font-semibold plainText text-[#2A435D]">Delivery Order</p>
               <p class="text-[#2A435D]">+880 1630 225 015</p>
@@ -26,7 +30,7 @@
         </div>
   
         <!-- Right Side (Image) -->
-        <div class="w-1/2">
+        <div class="w-full lg:w-1/2">
           <img src="https://i.ibb.co/30zx0SQ/image-delivery.png" alt="Delivery Image" class="w-full h-auto border border-blue-500 rounded-md" />
         </div>
   

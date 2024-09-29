@@ -5,9 +5,9 @@
 <template>
     <div class="max-w-7xl mx-auto">
         <h4 class="text-center sectionTitle py-8">OUR RESTAURANT</h4>
-        <div class="flex  justify-between gap-4 items-start">
+        <div class="flex flex-col md:flex-row justify-between gap-4 items-start">
             <!-- Image Div -->
-            <div class="flex flex-col">
+            <div class="flex flex-col px-5">
                 <div class="flex w-full gap-4 mb-4">
                     <img src="https://i.ibb.co.com/KKv4dKR/image-our-Resturant-1.png" alt="" class="w-1/2">
                     <img src="https://i.ibb.co.com/pxNZ3wG/image-our-Resturant-2.png" alt="" class="w-1/2">
@@ -18,7 +18,7 @@
             </div>
             
             <!-- Text Div -->
-            <div class="w-1/2">
+            <div class="w-[80%] lg:w-1/2 mx-auto">
                 <h1 class="special">For every special occasion <br> there’s heritaste</h1>
                 <p class="indigun">Indignation and dislike men who are so beguiled demoralized by the charms of <br> pleasure of the moment. Success Story.</p>
 

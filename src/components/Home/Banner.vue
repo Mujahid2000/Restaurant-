@@ -11,10 +11,15 @@
     <div>
         <div>
             <h4 class="font[roboto] text-[#C33] text-[1.25rem] italic font-medium">Best In Town</h4>
-            <h1 class="text-[#2A435D] text-[3.125rem] leading-normal italic font-medium">ENJOY OUR CHICKEN <br> <span class="text-[#C33]">BURGER</span> FAST FOOD</h1>
+            <h1 class="text-[#2A435D] text-4xl lg:text-[3.125rem] leading-normal italic font-medium">ENJOY OUR CHICKEN <br> <span class="text-[#C33]">BURGER</span> FAST FOOD</h1>
         </div>
         <div class="flex pl-10 items-center place-items-center pt-14 justify-evenly">
-            <button class="w-[12.5rem] h-[3.75rem] focus:outline-none active:bg-[#602020] bg-[#C33] rounded-xl text-[#FFF8EE] text-[2.1875rem] font-bold">Order Now</button>
+            <button class="w-[8.5rem] lg:w-[12.5rem] h-[2.7rem] lg:h-[3.75rem] focus:outline-none bg-gradient-to-r from-[#C33] to-[#A82A2A] 
+rounded-xl text-[#FFF8EE] text-lg lg:text-[2rem] font-bold shadow-lg transition-transform 
+transform hover:scale-105 hover:shadow-xl active:bg-[#602020] active:scale-95">
+    Order Now
+</button>
+
             <h3 class="text-[#2A435D] text-[1.5625rem] font-normal"> Price: $10</h3>
         </div>
     </div>

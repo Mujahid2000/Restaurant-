@@ -44,7 +44,7 @@ const handleSearch = (event) => {
           <div class="bg-[#c33] p-[1.3rem] rounded-2xl">
             <input
               @input="handleSearch"
-              class="h-[4rem] w-[20rem] text-center rounded-lg border text-base font-medium bg-[#FFF8EE]"
+              class="h-[4rem] w-full lg:w-[20rem] text-center rounded-lg border text-base font-medium bg-[#FFF8EE]"
               placeholder="Search your Items here..."
             />
           </div>
@@ -92,7 +92,7 @@ const handleSearch = (event) => {
         <div v-if="item.name || item.description || item.price" class="flex-1 p-4">
           <h2 v-if="item.name" class="text-xl font-bold text-gray-800 hover:text-[#c33]">{{ item.name }}</h2>
           <p v-if="item.description" class="text-gray-600">{{ item.description.slice(0, 50) }}...</p>
-          <p v-if="item.price" class="text-lg font-semibold text-gray-800 mt-2">${{ item.price }}</p>
+          <p v-if="item.price" class="text-lg font-semibold text-gray-800 mt-2">${{ item.price }} </p>
         </div>
 
         <!-- Image Section for Regular Items -->

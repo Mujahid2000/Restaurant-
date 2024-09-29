@@ -34,10 +34,10 @@ const data = [
   </div>
 
   <!-- Team Section -->
-  <div class="flex justify-center space-x-8 pt-[8rem]">
+  <div class="flex flex-col lg:flex-row justify-center items-center  space-x-0 lg:space-x-8 pt-[8rem]">
     <!-- Team Member 1 -->
      <div v-for="singleData in data" :key="singleData.id">
-         <div class="w-[21.4375rem] h-[21.4375rem] border-[3px] rounded-full border-[#c55]">
+         <div class="w-[21.4375rem] h-[21.4375rem] border-[3px] my-[7.25rem] lg:my-0 rounded-full border-[#c55]">
              <div class="flex flex-col justify-end pt-28">
                  <h1 class="text-center titleText py-3">{{ singleData.name }}</h1>
                  <p class="descriptionText">{{ singleData.about }}</p>
@@ -45,7 +45,7 @@ const data = [
              </div>
              <img :src='singleData.picture' alt="" class="rounded-full absolute -mt-[26rem] ml-[8rem]">
          </div>
-         <div class="flex justify-center mt-8 space-x-7">
+         <div class="flex justify-center my-5 lg:my-0 lg:mt-8  space-x-7">
         <a href="#" class="text-red-500 text-xl"><i class="fab fa-twitter"></i></a>
         <a href="#" class="text-red-500 text-xl"><i class="fab fa-facebook-f"></i></a>
         <a href="#" class="text-red-500 text-xl"><i class="fab fa-instagram"></i></a>

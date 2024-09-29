@@ -41,7 +41,7 @@ watch(() => route.params.id, (newItem) => {
 </script>
 
 <template>
-    <div class="bg-[#FFF8EE]">
+    <div class="bg-[#FFF8EE] px-3">
           <!-- Pass the item name to ItemImage component -->
   <ItemImage :name="currentItems?.name" />
 

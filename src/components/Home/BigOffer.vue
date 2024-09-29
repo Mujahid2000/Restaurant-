@@ -10,9 +10,9 @@
     </p>
     <div class="flex flex-col lg:flex-row justify-between   border-black px-2 py-3">
       <!-- Set a fixed width and height for each image, and make sure they are contained -->
-      <img class="h-[12rem] w-[30%] object-cover" src="https://i.ibb.co.com/g41FptN/image-big-Offer-1.png" alt="Image 1">
-      <img class="h-[12rem] w-1/3 object-fill" src="https://i.ibb.co.com/B3bkkw5/image-big-Offer-2.png" alt="Image 2">
-      <img class="h-[12rem] w-[30%] object-cover" src="https://i.ibb.co.com/XsMJmgX/image-big-Offer-3.png" alt="Image 3">
+      <img class="h-[12rem] w-full py-2 md:w-[30%] object-cover" src="https://i.ibb.co.com/g41FptN/image-big-Offer-1.png" alt="Image 1">
+      <img class="h-[12rem] w-full py-2 md:w-1/3 object-fill" src="https://i.ibb.co.com/B3bkkw5/image-big-Offer-2.png" alt="Image 2">
+      <img class="h-[12rem] w-full py-2 md:w-[30%] object-cover" src="https://i.ibb.co.com/XsMJmgX/image-big-Offer-3.png" alt="Image 3">
     </div>
   </div>
 </template>

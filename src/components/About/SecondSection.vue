@@ -1,5 +1,5 @@
 <template>
-    <div class="max-w-7xl flex justify-around mx-auto py-8 m-3 border-2 rounded-2xl border-[#C33]">
+    <div class="max-w-7xl flex flex-col lg:flex-row justify-around mx-auto py-8 m-3  border-2 rounded-2xl border-[#C33]">
       <img class="px-5" src="https://i.ibb.co.com/7XYCCyJ/image-about-1.png" alt="">
       
       <div class="flex flex-col justify-between py-6">

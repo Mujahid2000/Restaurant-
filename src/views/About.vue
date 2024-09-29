@@ -10,7 +10,7 @@ import SpecialServiceSection from '@/components/About/SpecialServiceSection.vue'
 </script>
 
 <template>
-<div class="bg-[#FFF8EE]">
+<div class="bg-[#FFF8EE] p-3">
 <BackgroundImage/>
 <SecondSection/>
 <OurStorySection/>
