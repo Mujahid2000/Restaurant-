@@ -189,7 +189,7 @@ watch(user, (newUser) => {
     </div>
 
     <!-- Card Section -->
-    <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-2 mx-auto pt-9 gap-5">
+    <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-2 mx-auto pt-9 gap-5 px-2">
       <RouterLink
         v-for="(item, index) in shuffledItems"
         :key="item._id"

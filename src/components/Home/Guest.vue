@@ -81,7 +81,7 @@ onUnmounted(() => {
 <template>
   <div class="max-w-7xl mx-auto py-10 text-center">
     <h2 class="text-red-600 text-lg font-semibold mb-8">Testimonial</h2>
-    <h3 class="text-2xl font-bold text-blue-900 mb-10 review">Review <span class="guest">from our guests </span> </h3>
+    <h3 class="md:text-[2.1875rem] text-3xl  lg:px-0 font-bold text-blue-900 mb-10 review">Review <span class="guest md:text-[2.1875rem] text-3xl">from our guests </span> </h3>
 
     <!-- Carousel -->
     <div class="relative flex items-center justify-center space-x-6 overflow-hidden">
@@ -127,7 +127,6 @@ onUnmounted(() => {
 
 .guest{
     font-family: Roboto;
-font-size: 2.1875rem;
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -135,8 +134,7 @@ color: var(--primary-color, #C33);
 }
 
 .review{
-    font-family: Roboto;
-font-size: 2.1875rem;
+font-family: Roboto;
 font-style: normal;
 font-weight: 700;
 line-height: normal;

@@ -35,62 +35,63 @@ onMounted(() => {
       </div>
 
       <!-- Tabs Section -->
-      <div class="flex justify-center space-x-6 mb-8 w-[300px] lg:w-auto scroll-m-0 overflow-x-auto md:w-0">
-        <button 
-          @click="itemsMenu('breakfast')" 
-          :class="{
-            tabButtonColorActive: selectedMenu === 'breakfast', 
-            tabButtonColorInactive: selectedMenu !== 'breakfast'
-          }" 
-          class="px-6 py-2 text-white font-semibold"
-        >
-          BREAKFAST
-        </button>
+      <div class="flex justify-center flex-wrap gap-4 lg:space-x-6 mb-8 lg:w-auto md:w-0">
+  <button 
+    @click="itemsMenu('breakfast')" 
+    :class="{
+      tabButtonColorActive: selectedMenu === 'breakfast', 
+      tabButtonColorInactive: selectedMenu !== 'breakfast'
+    }" 
+    class="px-3 md:px-6 py-2 text-white font-semibold"
+  >
+    BREAKFAST
+  </button>
 
-        <button 
-          @click="itemsMenu('lunch')" 
-          :class="{
-            tabButtonColorActive: selectedMenu === 'lunch', 
-            tabButtonColorInactive: selectedMenu !== 'lunch'
-          }" 
-          class="px-6 py-2 text-gray-600 font-semibold"
-        >
-          LUNCH
-        </button>
+  <button 
+    @click="itemsMenu('lunch')" 
+    :class="{
+      tabButtonColorActive: selectedMenu === 'lunch', 
+      tabButtonColorInactive: selectedMenu !== 'lunch'
+    }" 
+    class="px-6 py-2 text-gray-600 font-semibold"
+  >
+    LUNCH
+  </button>
 
-        <button 
-          @click="itemsMenu('dinner')" 
-          :class="{
-            tabButtonColorActive: selectedMenu === 'dinner', 
-            tabButtonColorInactive: selectedMenu !== 'dinner'
-          }" 
-          class="px-6 py-2 text-gray-600 font-semibold"
-        >
-          DINNER
-        </button>
+  <button 
+    @click="itemsMenu('dinner')" 
+    :class="{
+      tabButtonColorActive: selectedMenu === 'dinner', 
+      tabButtonColorInactive: selectedMenu !== 'dinner'
+    }" 
+    class="px-6 py-2 text-gray-600 font-semibold"
+  >
+    DINNER
+  </button>
 
-        <button 
-          @click="itemsMenu('starters')" 
-          :class="{
-            tabButtonColorActive: selectedMenu === 'starters', 
-            tabButtonColorInactive: selectedMenu !== 'starters'
-          }" 
-          class="px-6 py-2 text-gray-600 font-semibold"
-        >
-          STARTERS
-        </button>
+  <button 
+    @click="itemsMenu('starters')" 
+    :class="{
+      tabButtonColorActive: selectedMenu === 'starters', 
+      tabButtonColorInactive: selectedMenu !== 'starters'
+    }" 
+    class="px-6 py-2 text-gray-600 font-semibold"
+  >
+    STARTERS
+  </button>
 
-        <button 
-          @click="itemsMenu('beverages')" 
-          :class="{
-            tabButtonColorActive: selectedMenu === 'beverages', 
-            tabButtonColorInactive: selectedMenu !== 'beverages'
-          }" 
-          class="px-6 py-2 text-gray-600 font-semibold"
-        >
-          BEVERAGES
-        </button>
-      </div>
+  <button 
+    @click="itemsMenu('beverages')" 
+    :class="{
+      tabButtonColorActive: selectedMenu === 'beverages', 
+      tabButtonColorInactive: selectedMenu !== 'beverages'
+    }" 
+    class="px-6 py-2 text-gray-600 font-semibold"
+  >
+    BEVERAGES
+  </button>
+</div>
+
 
       <!-- Main Content Section -->
       <div class="flex flex-col-reverse lg:flex-row">

@@ -59,21 +59,15 @@ const handleSearch = (event) => {
     </div>
 
     <!-- component -->
-<div v-if="loading" class="flex  items-center justify-center">
-    <div class="w-1/3">
-        <div class="max-w-sm rounded overflow-hidden shadow-lg animate-pulse">
-        <div class="h-48 bg-gray-300"></div>
-        <div class="px-6 py-4">
-            <div class="h-6 bg-gray-300 mb-2"></div>
-            <div class="h-4 bg-gray-300 w-2/3"></div>
+    <div v-if="loading" class="loading-container max-w-7xl mx-auto pt-9 ">
+          <!-- Skeleton Loader -->
+      <div class="bg-[#fff8EE] rounded-lg shadow-md p-4 animate-pulse">
+        <div class="w-2/3 h-4 bg-gray-300 rounded mb-2"></div>
+        <div class="w-full h-8 bg-gray-300 rounded mb-2"></div>
+        <div class="w-full h-8 bg-gray-300 rounded mb-2"></div>
+        <div class="w-1/2 h-8 bg-gray-300 rounded"></div>
+      </div>
         </div>
-        <div class="px-6 pt-4 pb-2">
-            <div class="h-4 bg-gray-300 w-1/4 mb-2"></div>
-            <div class="h-4 bg-gray-300 w-1/2"></div>
-        </div>
-        </div>
-    </div>
-</div>
 
     <div v-else class="max-w-7xl grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 mx-auto pt-9 gap-5">
       <RouterLink

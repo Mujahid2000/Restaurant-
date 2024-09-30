@@ -131,8 +131,8 @@ onMounted(() => {
 
 <template>
   <div class="max-w-7xl mx-auto">
-    <div class="flex gap-6 justify-between items-start py-6">
-      <div class="w-2/3">
+    <div class="flex flex-col lg:flex-row gap-6 justify-between items-start py-6 px-3 lg:px-0">
+      <div class="w-full lg:w-2/3">
         <div v-if="loading" class="loading-container">
           <div class="bg-[#FFF8EE] p-4 h-80 rounded-2xl shadow-lg flex flex-col justify-center max-w-6xl mx-auto sm:flex-row gap-5 select-none">
             <div class="h-52 sm:h-full sm:w-72 rounded-xl bg-gray-200 animate-pulse"></div>
@@ -165,7 +165,7 @@ onMounted(() => {
         </div>
       </div>
 
-      <div class="w-1/3 flex flex-col justify-between items-start">
+      <div class="w-full lg:w-1/3 flex flex-col justify-between items-start">
         <div v-if="menuItems && menuItems.description" class="flex-1">
           <h1 class="text-3xl font-bold mb-4 text-gray-800">{{ menuItems.name }}</h1>
           <p class="descriptionText text-justify text-gray-600 mb-6">{{ menuItems.description }}</p>
@@ -182,7 +182,7 @@ onMounted(() => {
       </div>
     </div>
 
-    <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-2 mx-auto pt-9 gap-5">
+    <div class="max-w-7xl grid grid-cols-1 lg:grid-cols-2 mx-auto pt-9 gap-5 px-2">
         <RouterLink
         v-for="(item, index) in shuffledItems"
         :key="item._id"

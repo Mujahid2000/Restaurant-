@@ -9,7 +9,7 @@
       
       <!-- Chef Image -->
     <div class="flex items-end">
-        <div class="flex flex-col md:flex-row items-center md:justify-between gap-10">
+        <div class="flex flex-col md:flex-row items-center md:items-start md:justify-between gap-10">
         <div class="w-full max-w-xs">
         <img class=" rounded-lg shadow-lg" 
            src="https://i.ibb.co/M2w8vM8/e1268c4d0ed68e5e22e94eac7953c2d5.png" 
@@ -23,12 +23,12 @@
           Highest quality artisangrains,<br>
           proteins & seasonal ingredients
         </h2>
-        <p class="text-[#2A435D] text-[1.2rem]">
+        <p class="text-[#2A435D] text-[1.2rem] px-3 md:px-0">
             Righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desires, that they cannot foresee.
         </p>
 
         <!-- Bullet Points -->
-        <ul class="space-y-2 text-[#2A435D] text-[1.2rem] leading-10">
+        <ul class="space-y-2 text-[#2A435D] text-[1.2rem] px-2 md:px-0 leading-10">
           <li class="flex items-center">
             <span class="text-red-600 mr-2">✶</span> Simple and easy to distinguish
           </li>

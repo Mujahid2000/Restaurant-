@@ -6,12 +6,22 @@ import { RouterLink, useRoute } from 'vue-router';
 const data = ref(null);
 const route = useRoute(); // This gives you access to the current route
 const currentPath = route.path;
+const loading = ref(true)
 
 console.log(currentPath);
 
 const dataFunction = async () => {
-  const newPackageData = await axios.get('https://restaurant-server-xi.vercel.app/dataMenu');
+  try {
+    loading.value = true;
+    const newPackageData = await axios.get('https://restaurant-server-xi.vercel.app/dataMenu');
   data.value = newPackageData.data;
+  } catch (error) {
+    console.error(error);
+    toast.error('Failed to fetch recipe data. Please try again later.');
+  }finally{
+    loading.value = false;
+  }
+  
 };
 
 onMounted(() => {
@@ -21,6 +31,15 @@ onMounted(() => {
 
 <template>
   <div class="bg-[#fff8EE]">
+    <div v-if="loading" class="loading-container max-w-7xl mx-auto pt-9 ">
+          <!-- Skeleton Loader -->
+      <div class="bg-[#fff8EE] rounded-lg shadow-md p-4 animate-pulse">
+        <div class="w-2/3 h-4 bg-gray-300 rounded mb-2"></div>
+        <div class="w-full h-8 bg-gray-300 rounded mb-2"></div>
+        <div class="w-full h-8 bg-gray-300 rounded mb-2"></div>
+        <div class="w-1/2 h-8 bg-gray-300 rounded"></div>
+      </div>
+        </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 pt-10 gap-3 max-w-7xl mx-auto">
       <RouterLink
    :to="{ path: `/menuDetails/${item._id}`}"

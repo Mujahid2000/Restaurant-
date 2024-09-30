@@ -1,11 +1,16 @@
 <script setup>
-import { inject, ref } from 'vue';
+import axios from 'axios';
+import { inject, onMounted, ref, watch } from 'vue';
 import { RouterLink } from 'vue-router';
+import { useToast } from 'vue-toastification';
 
 // Reactive states
 const openMenu = ref(false);
 const profileMenu = ref(false);
+const data = ref([]);
 
+const emailId = inject('email');
+const toast = useToast();
 // Dummy user data for testing
 const user = inject('user');
 const logOut = inject('logOut')
@@ -29,7 +34,36 @@ function profileMenuButton() {
   profileMenu.value = !profileMenu.value;
 }
 
+const fetchCartData =async () =>{
+  if(!emailId.value){
+    toastInjectionKey.error('No email available')
+  }
 
+  try {
+    const response = await axios.get(`https://restaurant-server-xi.vercel.app/cart/${emailId.value}`);
+    data.value = response.data; // Populate cart data
+  } catch (error) {
+    console.error(error);
+    toast.error('Failed to fetch cart data.');
+  }
+}
+
+
+watch(emailId, (newUser) =>{
+  if(newUser){
+    fetchCartData();
+  }else{
+    console.log('No user logged in');
+    data.value = []
+  }
+})
+
+
+onMounted(() =>{
+  if(emailId && emailId.value){
+    fetchCartData()
+  }
+})
 </script>
 
 <template>
@@ -71,13 +105,13 @@ function profileMenuButton() {
         <!-- Cart Icon -->
         <RouterLink v-show="user" to="/cart" class="relative">
           <img src="https://img.icons8.com/ios-filled/50/2A435D/shopping-cart.png" alt="Cart Icon" class="h-6 w-6" />
-          <span class="absolute top-0 right-0 text-xs bg-blue-500 text-white rounded-full px-1">2</span>
+          <span class="absolute top-0 right-0 text-xs bg-blue-500 text-white rounded-full px-1">{{ data.length }}</span>
         </RouterLink>
         <p v-show="user" class="ml-2 text-[#2A435D]">Delivery Order <br /> <span>+880 1630 225 015</span></p>
 
         <div v-show="!user" class="relative">
           <img src="https://img.icons8.com/ios-filled/50/2A435D/shopping-cart.png" alt="Cart Icon" class="h-6 w-6" />
-          <span class="absolute top-0 right-0 text-xs bg-blue-500 text-white rounded-full px-1">2</span>
+          <span class="absolute top-0 right-0 text-xs bg-blue-500 text-white rounded-full px-1">0</span>
         </div>
         <p v-show="!user" class="ml-2 text-[#2A435D]">Delivery Order <br /> <span>+880 1630 225 015</span></p>
         
