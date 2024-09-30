@@ -35,7 +35,7 @@ onMounted(() => {
       </div>
 
       <!-- Tabs Section -->
-      <div class="flex justify-center space-x-6 mb-8 w-[380px] lg:w-auto scroll-m-0 overflow-x-auto md:w-0">
+      <div class="flex justify-center space-x-6 mb-8 w-[300px] lg:w-auto scroll-m-0 overflow-x-auto md:w-0">
         <button 
           @click="itemsMenu('breakfast')" 
           :class="{
