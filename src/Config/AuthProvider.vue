@@ -25,7 +25,7 @@ const initAuth = () => {
     user.value = currentUser;  // Update reactive user ref
     loading.value = false;
     if (currentUser) {
-      console.log('User logged in:');
+      console.log('User logged in now');
     } else {
       console.log('No user logged in');
     }

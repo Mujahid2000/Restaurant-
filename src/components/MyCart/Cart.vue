@@ -158,7 +158,7 @@ const orderData = {
 
 
 watchEffect(() => {
-  console.log("Cart Data:", data.value);
+  console.log("Cart Data was found");
 });
 
 </script>

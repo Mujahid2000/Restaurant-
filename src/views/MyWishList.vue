@@ -14,7 +14,7 @@ const emailId = inject('email');  // Get the provided email from user state
 const loading = ref(true);  // Track loading state
 const addingToCart = ref(true);
 const email = computed(() => user.value ? user.value.email : null);
-console.log(email.value);
+
 
 
 // Function to fetch cart data based on the email

@@ -11,7 +11,8 @@ import MyCart from '@/views/MyCart.vue'
 import MyWishList from '@/views/MyWishList.vue'
 import Menu from '@/views/Menu.vue'
 import MenuDetails from '@/components/MenuDetails/MenuDetails.vue'
-
+import { useAuth } from '@/Config/UseAuth'
+// const {user} = useAuth();
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -48,7 +49,10 @@ const router = createRouter({
     {
       path: '/myAccount',
       name: 'Registration',
-      component: MyAccount
+      component: MyAccount,
+      meta: {
+        needAuth: true
+      }
     },
     {
       path: '/login',
@@ -58,12 +62,18 @@ const router = createRouter({
     {
       path: '/cart',
       name: 'MyCart',
-      component: MyCart
+      component: MyCart,
+      meta: {
+        needAuth: true
+      }
     },
     {
       path: '/myWishList',
       name: 'MyWishList',
-      component: MyWishList
+      component: MyWishList,
+      meta: {
+        needAuth: true
+      }
     },
     {
       path: '/allMenu',
@@ -77,5 +87,21 @@ const router = createRouter({
     }
   ]
 })
+
+
+const { user, loading, ready } = useAuth();
+
+router.beforeEach(async (to, from, next) => {
+  // Wait for the authentication state to be ready
+  await ready; // Wait for the promise to resolve
+
+  if (to.meta.needAuth && !user.value) {
+    // User is not authenticated, redirect to login or another appropriate route
+    next({ name: 'Authentication' });
+  } else {
+    // User is authenticated or route does not require auth
+    next();
+  }
+});
 
 export default router

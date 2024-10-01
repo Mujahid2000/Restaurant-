@@ -10,9 +10,9 @@ const register = inject('register');
 
 // Watch for changes and log the values to the console
 watchEffect(() => {
-  console.log('Name:', name.value);
-  console.log('Email:', email.value);
-  console.log('Password:', password.value);
+  console.log('Name');
+  console.log('Email');
+  console.log('Password');
 });
 
 const handleRegister = async () => {

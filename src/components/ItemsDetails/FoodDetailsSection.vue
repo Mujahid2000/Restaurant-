@@ -121,8 +121,8 @@ onMounted(() => {
 // Watch for changes in user data and update email
 watch(user, (newUser) => {
   if (newUser) {
-    console.log('User Email:', newUser.email);
-    email.value = newUser.email;
+    console.log('User Email was found');
+    // email.value = newUser.email;
   } else {
     console.log('No user logged in');
   }

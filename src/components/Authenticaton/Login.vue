@@ -1,20 +1,22 @@
 <script setup>
 import { inject, ref } from 'vue';
 import { useRouter } from 'vue-router';
+import { useToast } from 'vue-toastification';
 import { errorMessages } from 'vue/compiler-sfc';
 const router = useRouter();
 const email = ref('');
 const password = ref('');
-
+const toast = useToast();
 const login = inject('login');
 const loginWithGoogle = inject('loginWithGoogle');
-
+const errorMessage = ref(''); 
 const handleLogin = async() =>{
     try {
         await login(email.value, password.value);
         email.value = '';
         password.value = ''
         router.push('/')
+        toast.success('Login Successfully')
     } catch (error) {
         const errorCode = error.code;
         switch(errorCode){
