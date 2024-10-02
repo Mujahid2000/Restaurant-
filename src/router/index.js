@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory, useRouter } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '@/views/About.vue'
 import Items from '@/views/Items.vue'
@@ -12,7 +12,8 @@ import MyWishList from '@/views/MyWishList.vue'
 import Menu from '@/views/Menu.vue'
 import MenuDetails from '@/components/MenuDetails/MenuDetails.vue'
 import { useAuth } from '@/Config/UseAuth'
-// const {user} = useAuth();
+import { watch } from 'vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -90,6 +91,12 @@ const router = createRouter({
 
 
 const { user, loading, ready } = useAuth();
+
+watch(user, (user1) =>{
+if(!user1){
+  router.push({name: 'Authentication'})
+}
+})
 
 router.beforeEach(async (to, from, next) => {
   // Wait for the authentication state to be ready
