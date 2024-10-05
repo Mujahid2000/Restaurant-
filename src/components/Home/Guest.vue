@@ -4,31 +4,31 @@ import { ref, onMounted, onUnmounted, computed } from 'vue';
 const testimonials = ref([
   {
     name: "Robert M. Dixon",
-    image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
+    image: "https://i.ibb.co.com/GfSD5Pg/istockphoto-1364917563-612x612.jpg", // replace with actual image link
     review: "Discover authentic food reviews from our happy customers, sharing their delightful dining experiences and favorite dishes. ...",
     rating: 5
   },
   {
     name: "Bernadette R. Martin",
-    image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
+    image: "https://i.ibb.co.com/XyXvBMk/team-1.jpg", // replace with actual image link
     review: "Explore genuine customer reviews, highlighting their unforgettable meals and the exceptional flavors they experienced with us. ...",
     rating: 4
   },
   {
     name: "Regina D. Leonard",
-    image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
+    image: "https://i.ibb.co.com/bKc99QX/Most-Beautiful-Women-In-India.jpg", // replace with actual image link
     review: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome. My wife had a burger over greens. ...",
     rating: 4
   },
   {
-    name: "John D. Doe",
-    image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
+    name: "Richard Nickson",
+    image: "https://i.ibb.co.com/2SQXZ9N/young-bearded-man-with-striped-shirt-273609-5677.jpg", // replace with actual image link
     review: "The food was amazing! Fresh ingredients, great flavors, the salad is too good and a cozy atmosphere. I’ll definitely return! ...",
     rating: 5
   },
   {
-    name: "John D. Doe 1",
-    image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
+    name: "John D. Doe",
+    image: "https://i.ibb.co.com/7XDmh5W/john-doe.jpg", // replace with actual image link
     review: "Amazing food and great atmosphere! Every bite was a delight. their service it awesome, I'm impressed. Can’t wait to visit again! ...",
     rating: 5
   },
