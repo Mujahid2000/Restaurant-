@@ -105,7 +105,7 @@ onMounted(() => {
               <p class="text-green-600 text-2xl font-bold">20% Discount</p>
               <p class="text-gray-500">Open Every Day From 07AM - 11AM</p>
               <RouterLink to="/allMenu">
-                <button class="mt-4 w-full px-6 py-3 bg-red-500 text-white font-semibold">VIEW ALL MENU</button>
+                <button class="mt-4 w-full px-6 py-3 bg-red-500 hover:bg-red-700 duration-500 text-white font-semibold">VIEW ALL MENU</button>
               </RouterLink>
             </div>
           </div>

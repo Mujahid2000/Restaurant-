@@ -8,17 +8,17 @@ const products = [
   {
     name: 'Product 1',
     text: 'Birthday Party',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    description: "Celebrate your special day with us! Our restaurant offers a vibrant atmosphere, delicious food, and personalized service to make your birthday party unforgettable!"
   },
   {
     name: 'Product 2',
     text: 'Wedding Party',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    description: "Host your dream wedding party with us! Enjoy exquisite cuisine, elegant decor, and dedicated service to create cherished memories on your special day."
   },
   {
     name: 'Product 3',
     text: 'Bachelor Party',
-    description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s."
+    description: "Plan an unforgettable bachelor party with us! Enjoy a lively atmosphere, delicious food, and custom packages to celebrate this exciting milestone with friends."
   },
   
   // Add more products here...

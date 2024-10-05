@@ -5,31 +5,31 @@ const testimonials = ref([
   {
     name: "Robert M. Dixon",
     image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
-    review: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome. My wife had a burger over greens ...",
+    review: "Discover authentic food reviews from our happy customers, sharing their delightful dining experiences and favorite dishes. ...",
     rating: 5
   },
   {
     name: "Bernadette R. Martin",
     image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
-    review: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome. My wife had a burger over greens ...",
+    review: "Explore genuine customer reviews, highlighting their unforgettable meals and the exceptional flavors they experienced with us. ...",
     rating: 4
   },
   {
     name: "Regina D. Leonard",
     image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
-    review: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome. My wife had a burger over greens ...",
+    review: "Also very good and so was the service. I had the mushroom risotto with scallops which was awesome. My wife had a burger over greens. ...",
     rating: 4
   },
   {
     name: "John D. Doe",
     image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
-    review: "The service was good and the food was excellent. I had the steak, and it was cooked to perfection.",
+    review: "The food was amazing! Fresh ingredients, great flavors, the salad is too good and a cozy atmosphere. I’ll definitely return! ...",
     rating: 5
   },
   {
     name: "John D. Doe 1",
     image: "https://i.ibb.co.com/mq590b6/image-guests-1.png", // replace with actual image link
-    review: "The service was good and the food was excellent. I had the steak, and it was cooked to perfection.",
+    review: "Amazing food and great atmosphere! Every bite was a delight. their service it awesome, I'm impressed. Can’t wait to visit again! ...",
     rating: 5
   },
 ]);
@@ -90,7 +90,7 @@ onUnmounted(() => {
         
         <!-- Loop through extended testimonials -->
         <div v-for="(testimonial, index) in extendedTestimonials" :key="testimonial.id"
-          class="flex-shrink-0 w-1/3 px-4 py-6 text-center"
+          class="flex-shrink-0 cursor-pointer w-1/3 px-4 py-6 text-center"
           :class="{'scale-105 z-10': index === currentIndex}">
           <img :src="testimonial.image" alt="Testimonial Image"
             class="mx-auto w-24 h-24 rounded-full border-4 border-red-600 mb-4">

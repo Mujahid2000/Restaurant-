@@ -3,8 +3,8 @@
       <img class="px-5" src="https://i.ibb.co.com/7XYCCyJ/image-about-1.png" alt="">
       
       <div class="flex flex-col justify-between py-6">
-        <h4 class="heading">Opaleye yellowtail snapper, velvet catfish, graveldiver banded killifish, Old World rivuline catalufa eagle ray Moorish idol. Herring smelt barbeled dragonfish, tommy ruff.</h4>
-        <p class="text">Queen danio velvet catfish Sacramento blackfish, bullhead shark, Colorado squawfish Russian sturgeon clown triggerfish swamp-eel paradise fish. Hake cookie-cutter shark silver carp hawkfish snipe eel armorhead catfish, moray eel silverside! Bluegill toadfish, orangespine unicorn fish. Manta Ray Moorish idol.</p>
+        <h4 class="heading ">"Discover our food section, featuring delicious dishes crafted with fresh, local ingredients. Enjoy a variety of flavors that promise to delight your palate!"</h4>
+        <p class="text pt-5">"Indulge in our diverse food section, featuring a carefully curated menu that celebrates fresh, seasonal ingredients. From savory appetizers to delectable entrees and mouthwatering desserts, each dish is crafted with precision and passion. Our culinary team takes pride in blending flavors and traditions to create unique dining experiences. Whether you're craving comfort food or exploring new cuisines, our offerings cater to every palate."</p>
       </div>
     </div>
   </template>

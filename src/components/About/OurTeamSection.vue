@@ -4,22 +4,19 @@ const data = [
         id: 1,
         picture: 'https://i.ibb.co.com/sWcpc7Z/image-our-Team-1.jpg',
         name: 'Brian Adams',
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. " +
-        "Lorem ipsum dolor sit amet"
+        about: "Our chef combines culinary artistry and passion,crafting unique dishes that celebrate fresh flavors and create unforgettable dining for every guest."
     },
     {
         id: 2,
         picture: 'https://i.ibb.co.com/sWPC8Ks/image-our-Team-2.jpg',
         name: 'Jhon Khan',
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. " +
-        "Lorem ipsum dolor sit amet"
+        about: "Our talented chef specializes in innovative cuisine, using local ingredients to create memorable dishes that delight the senses and elevate your dining experience."
     },
     {
         id: 3,
         picture: 'https://i.ibb.co.com/ZYYmZmq/image-our-Team-3.jpg',
         name: 'Jessica Biel',
-        about: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna. " +
-        "Lorem ipsum dolor sit amet"
+        about: "Our head chef is committed to culinary excellence, expertly blending flavors to create innovative dishes that delight and inspire every palate."
     }
 ];
 

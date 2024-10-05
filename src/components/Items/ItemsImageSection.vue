@@ -4,7 +4,7 @@
 <template>
   <div class="imagePart flexClass bg-center bg-cover bg-no-repeat">
    <h1 class="about">ITEMS</h1>
-   <p class="pText"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br>sed do eius mod tempor incididunt ut labore et dolore magna.</p>
+   <p class="pText pt-2"> "Explore Our Menu: A Curated Selection of Delicious Dishes Crafted to Satisfy Every Craving."</p>
   </div>
 </template>
 

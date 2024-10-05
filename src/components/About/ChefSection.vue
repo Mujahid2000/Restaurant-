@@ -7,7 +7,7 @@
         <div class="space-y-4 max-w-2xl">
           <h2 class="text-xl uppercase text-[#C33]">Tasty and Crunchy</h2>
           <h3 class="text-[2.1875rem] font-bold text-[#2A435D]">Our Chef</h3>
-          <p class="text-[#2A435D] text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ullamco laboris nisi ut aliquip ex ea commodo condor consectetur adipiscing elit, sed do eiusmod tempor incididunt ullam.</p>
+          <p class="text-[#2A435D] text-xl">"Our head chef brings years of culinary expertise and a passion for flavor, crafting innovative dishes that delight every palate. With a commitment to using fresh, local ingredients, they create unforgettable dining experiences that showcase creativity and precision."</p>
         </div>
         <div class="flex justify-center items-center pt-16">
           <div class="flex justify-center items-center pt-16">
